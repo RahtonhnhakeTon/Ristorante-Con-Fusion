@@ -22,7 +22,12 @@
         min-height: 150px;
     }
 }
-    
+   
+.card {
+    padding: 0px 0px 0px 0px;
+}
+
+
 .content {
     color: darkslategray;
     text-align: justify;
