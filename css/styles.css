@@ -3,12 +3,33 @@
     padding: 0px auto;
 }
 
-.row-content {
-    margin: 0px auto;
-    padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
-    border-color: lightgray;
-    min-height: 400px;
+@media (min-width: 576px){
+    .row-content {
+        margin: 0px auto;
+        padding: 50px 0px 50px 0px;
+        border-bottom: 1px ridge;
+        border-color: lightgray;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 575px){
+    .row-content {
+        margin: 0px auto;
+        padding: 50px 0px 50px 0px;
+        border-bottom: 1px ridge;
+        border-color: lightgray;
+        min-height: 150px;
+    }
+}
+    
+.content {
+    color: darkslategray;
+    text-align: justify;
+}
+
+.title {
+    color: #9575CD;
 }
 
 .footer {
