@@ -9,10 +9,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -30,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginButton">
                         <span class="fa fa-sign-in fa-lg"></span> Login
                     </a>
                 </span>
@@ -69,7 +71,7 @@
     <div id="reservationModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
-                <div class="modal-header bg-warning">
+                <div class="modal-header">
                     <h3 class="text-white text-bold">Reserve a Table</h3>
                     <button type="button" class="btn close text-white text-large" data-dismiss="modal">
                         &times;
@@ -157,8 +159,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center text-center">
-                    <button type="button" class="btn btn-sm btn-block btn-warning"
-                     data-target="#reservationModal" data-toggle="modal"
+                    <button type="button" id="reserveTableButton" class="btn btn-sm btn-block btn-warning"
                      style="width: 10rem;">Reserve Table</a>
                 </div>
             </div>
@@ -311,26 +312,12 @@
         </div>
     </footer>
  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!--  build:js js/main.js-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#Carousel').carousel({ interval: 500 });
-            $('#carouselButton').click(function() {
-                if($('#carouselButton').children('span').hasClass('fa-pause')) {
-                    $('#Carousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');
-                    $('#carouselButton').children('span').addClass('fa-play');
-                }
-                else if($('#carouselButton').children('span').hasClass('fa-play')){
-                    $('#Carousel').carousel('cycle');
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-            });
-        });
-    </script>
+    <script src="./js/scripts.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
