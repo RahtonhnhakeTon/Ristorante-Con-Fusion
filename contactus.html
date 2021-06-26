@@ -11,8 +11,8 @@
 
     <!-- Bootstrap CSS -->
     <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
@@ -184,7 +184,7 @@
            <div class="col-12">
               <h3>Location Information</h3>
            </div>
-            <div class="col-12 col-sm-4 offset-sm-1">
+            <div class="col-12 col-sm-4 offset-sm-1" style="height: 200px">
                    <h5>Our Address</h5>
                     <address style="font-size: 100%">
 		              121, Clear Water Bay Road<br>
@@ -196,8 +196,10 @@
                         <a href="mailto:confusion@food.net">confusion@food.net</a>
 		           </address>
             </div>
-            <div class="col-12 col-sm-6 offset-sm-1">
-                <h5>Map of our Location</h5>
+            <div class="col-12 col-sm-6 offset-sm-1" style="height: 200px">
+                <a href="https://www.google.com/maps/@22.3091573,114.2835205,17.44z">
+                    <img src="img/map.jpg" alt="location map" class="img d-flex img-fluid" style="height: 100%;">
+                </a>
             </div>
             <div class="col-12 col-sm-11 offset-sm-1">
                 <div class="btn-group" role="group">
@@ -329,9 +331,9 @@
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <!--  build:js js/main.js-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./js/scripts.js"></script>
     <!-- endbuild  -->
 </body>
